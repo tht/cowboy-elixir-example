@@ -5,7 +5,7 @@ defmodule CowboyElixirExample.Mixfile do
     [app: :cowboy_elixir_example,
      version: "0.0.3",
      elixir: ">= 1.0.0",
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -28,7 +28,7 @@ defmodule CowboyElixirExample.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [ { :cowboy, github: "ninenines/cowboy", tag: "2.0.0-pre.3" },
+    [ { :cowboy, github: "ninenines/cowboy", tag: "2.0.0-rc.2" },
       { :jsex, "~> 2.0.0" } ]
   end
 end
